@@ -1,0 +1,35 @@
+.titulo1{
+    text-align: center;
+  }
+  .titulo2{
+    text-align: center;
+  }
+ 
+  .contenedor {
+    margin: 80px;
+    display: grid;
+    align-items: center; 
+   
+  }
+  
+  .contenedor label {
+    text-align: left;
+  }
+  
+  .contenedor input {
+    width: 80%; 
+    padding: 6px 10px;
+    box-sizing: border-box;
+    float: right;
+    
+  }
+  .botonagregar{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  

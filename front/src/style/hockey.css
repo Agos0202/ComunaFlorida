@@ -1,0 +1,76 @@
+.h1{
+  text-align: center;
+}
+.h2{
+  text-align: center;
+}
+.cantidad{
+   text-align: center;
+    background-color: #04AA6D;
+    color: white;
+    padding:  10px 12px;
+    min-width: 80%;
+}
+
+.container {
+  margin: 80px;
+  display: grid;
+  align-items: center; 
+ 
+}
+
+.container label {
+  text-align: left;
+}
+
+.container input {
+  width: 80%; 
+  padding: 6px 10px;
+  box-sizing: border-box;
+  float: right;
+  
+}
+.agregar{
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+table,th,td{
+  border-collapse: collapse; 
+  margin: 25px 0; 
+  font-size: 1em; 
+  font-family: sans-serif; 
+  min-width: 95px;
+}
+th {
+  background-color: #04AA6D;
+  color: white;
+  padding:  12px 15px;
+}
+td {
+  text-align: center;
+}
+
+.categoria{
+  text-align: center;
+  text-align: center;
+    background-color: #04AA6D;
+    color: white;
+    padding:  10px 12px;
+    min-width: 80%;
+}
+.editar{
+  background-color: blue;
+  color: white;
+  border-radius: 2px
+}
+.eliminar{
+  background-color: red;
+  color: white;
+  border-radius: px
+}

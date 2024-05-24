@@ -1,0 +1,29 @@
+/* ObrasPublicas.css */
+
+.obras-publicas {
+    position: fixed;
+    top: 0;
+    right: 0; /* Posición a la derecha */
+    width: 250px; /* Ancho de la barra lateral */
+    height: 100%; /* Altura del área disponible */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-left: 1px solid #ccc; /* Borde a la izquierda para separarlo del contenido principal */
+}
+
+.obras-publicas h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.obras-publicas h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.obras-publicas h5 {
+    font-size: 14px;
+    color: #888;
+}

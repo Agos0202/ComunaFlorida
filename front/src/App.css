@@ -1,0 +1,77 @@
+/* App.css */
+
+
+.App-header {
+  background-color: #f0f0f0;
+ padding: 0%;
+}
+
+.menu-horizontal {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: green;
+}
+
+.menu-horizontal a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.menu-horizontal a:hover {
+  border-color: #ffffff;
+}
+
+
+
+.logo{
+  
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+ 
+}
+
+.comuna{
+  
+  float: left;
+padding: 5px 50px;
+font-size: 40px;
+color: green;
+
+}
+
+.foot {
+  background-color: #f0f0f0; /* Color de fondo del footer */
+  padding: 20px; /* Espacio interior del footer */
+  text-align: center; /* Alineación del contenido al centro */
+}
+
+.logo2 {
+  width: 100px; /* Ancho de la imagen del logo */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-bottom: 10px; /* Espacio entre la imagen del logo y el texto */
+}
+
+.gestion {
+  color: #333; /* Color del texto del título */
+  font-size: 24px; /* Tamaño de fuente del título */
+  margin-bottom: 10px; /* Espacio entre el título y el texto siguiente */
+}
+
+.redes {
+  color: #666; /* Color del texto de las redes sociales */
+  font-size: 18px; /* Tamaño de fuente del texto de las redes sociales */
+  margin-bottom: 10px; /* Espacio entre el texto de las redes sociales y las imágenes de las redes sociales */
+}
+
+.facebook, .tiktok {
+  width: 30px; /* Ancho de las imágenes de las redes sociales */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin: 0 5px; /* Espacio entre las imágenes de las redes sociales */
+}
+

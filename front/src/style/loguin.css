@@ -1,0 +1,54 @@
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+.input1[type=text] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    box-sizing: border-box;
+  }
+  
+.input2[type=password] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    box-sizing: border-box;
+  }
+  
+  .button {
+    background-color: #e1ebe7;
+    border: none;
+    color: rgb(7, 7, 7);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px auto; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item{
+  background: #04AA6D;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:50px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  width: 33.3%;
+  outline:none;
+}
+
+

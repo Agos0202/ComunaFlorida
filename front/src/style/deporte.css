@@ -1,0 +1,177 @@
+/* Dep.css */
+
+.menu-horizontal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: green;
+  }
+  
+  .menu-horizontal .submenu-content {
+    display: flex;
+  }
+  
+  .menu-horizontal span {
+    color: #ffffff;
+    padding: 10px 15px;
+  }
+  
+  .menu-horizontal button {
+    color: #ffffff;
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+  
+  .menu-horizontal button:hover {
+    border-color: #ffffff;
+  }
+  
+  .menu-horizontal button.login-button {
+    margin-left: auto;
+  }
+  
+  footer {
+    margin-top: 40px;
+  }
+
+  .titulo{
+    text-align: center;
+    font-size: 45px;
+    background-color: gray;
+    color: white;
+  }
+
+  .subtitulo{
+    text-align: center;
+    background-color: gray;
+    color: white;
+  }
+ 
+
+  /* Estilos para el contenedor de la galería de imágenes */
+.imagenesHockey {
+  display: grid; /* Utilizamos cuadrículas CSS */
+  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas de igual tamaño */
+  gap: 10px; /* Espacio entre las imágenes */
+    padding: 3px 25px;
+}
+
+/* Estilos para cada imagen */
+.imagenesHockey img {
+  width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  border-radius: 10px; /* Bordes redondeados para las imágenes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar las imágenes */
+  transition: transform 0.3s ease; /* Efecto de transición al pasar el cursor sobre las imágenes */
+
+}
+
+/* Estilos al pasar el cursor sobre las imágenes */
+.imagenesHockey img:hover {
+  transform: scale(1.05); /* Zoom suave al pasar el cursor */
+}
+
+
+/* Estilos para el contenedor principal */
+.container {
+  text-align: center; /* Centra horizontalmente el contenido */
+  padding: 20px; /* Añade espacio alrededor del contenido */
+}
+
+/* Estilos para los títulos */
+h1 {
+  font-size: 24px; /* Tamaño del texto */
+  color: #333; /* Color del texto */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para el enlace */
+
+.boton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+.boton:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+.footer {
+  background-color: #f0f0f0; /* Color de fondo del footer */
+  padding: 20px; /* Espacio interior del footer */
+  text-align: center; /* Alineación del contenido al centro */
+}
+
+
+.logo {
+  width: 100px; /* Ancho de la imagen del logo */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-bottom: 10px; /* Espacio entre la imagen del logo y el texto */
+}
+
+.deporte {
+  color: #333; /* Color del texto del título */
+  font-size: 24px; /* Tamaño de fuente del título */
+  margin-bottom: 10px; /* Espacio entre el título y el texto siguiente */
+}
+
+.redes {
+  color: #666; /* Color del texto de las redes sociales */
+  font-size: 18px; /* Tamaño de fuente del texto de las redes sociales */
+  margin-bottom: 10px; /* Espacio entre el texto de las redes sociales y las imágenes de las redes sociales */
+}
+
+.facebook, .instagram {
+  width: 30px; /* Ancho de las imágenes de las redes sociales */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin: 0 5px; /* Espacio entre las imágenes de las redes sociales */
+}
+.secretaria {
+  background-image: url("../imagenes/secretaria.webp");
+  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+  height: 260px;
+  opacity: 0.8;
+  display: flex; /* Usa flexbox para centrar verticalmente el contenido */
+  flex-direction: column; /* Alinea el contenido en columnas */
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido */
+}
+
+.secret {
+  font-size: 48px; /* Reduce el tamaño de la fuente para mejorar la legibilidad */
+  color: #ffffff; /* Cambia el color del texto a blanco para que sea más legible */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.sec {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px; /* Aumenta ligeramente el tamaño de la fuente */
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  margin-top: 20px; /* Agrega un poco de espacio en la parte superior */
+}
+
+.sec:hover {
+  background-color: #45a049; /* Cambia el color de fondo al pasar el mouse */
+}

@@ -1,0 +1,85 @@
+/* login.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the login buttons */
+.login-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Button Styles */
+.botonDeporte {
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 30px;
+  margin: 20px;
+  cursor: pointer;
+  font-size: 1em;
+}
+.botonNoticia {
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 30px;
+  margin: 20px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+
+/* Selected Sport Form Container */
+.selected-sport-form {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Input Styles */
+.input1, .input2 {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Logo Styles */
+.logo {
+  width: 100px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Menu Styles */
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.menu-item {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover, .menu-item.active {
+  background-color: #005bb5;
+}

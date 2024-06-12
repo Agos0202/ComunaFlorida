@@ -1,0 +1,58 @@
+/* atencion.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin: 20px;
+}
+
+/* Button Styles */
+.boton {
+    background-color: #f8f8f8;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.boton-imagen {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.boton span {
+    display: block;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Add any specific styles for each form here if needed */

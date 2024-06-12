@@ -1,12 +1,7 @@
 import '../style/inicio.css'
-import fiesta from '../imagenes/Fiesta.jpg';
-import fiesta1 from '../imagenes/Fiesta1.jpg';
-import fiesta2 from '../imagenes/Fiesta2.jpg';
-import fiesta3 from '../imagenes/Fiesta3.jpg';
-import trabajo4 from '../imagenes/trabajo4.jpg';
-import trabajo2 from '../imagenes/Trabajo2.jpg';
-import trabajo3 from '../imagenes/trabajo3.jpg';
+
 import comuna from '../imagenes/comunaPrincipal.jpg'
+import VerNoti from './Noticia/verNoticia';
 
 
 function Inicio() {
@@ -22,25 +17,11 @@ function Inicio() {
    <div className='titulo'>
     <h1>JUNTOS TRABAJANDO POR LA CIUDAD QUE SOÑAMOS</h1>
    </div>
-
-   <div className='trabajo'>
-   
-   <img src={trabajo3} alt="holaaa" />
-    <img src={trabajo2} alt="holaaa" />
-     <img src={trabajo4} alt="holaa" />
-   </div>
-
-   <h1 className='titulos'>FIESTAS EMOTIVAS</h1>
-
-   <div className='fiesta'>
-    <img src={fiesta} alt="Hola" />
-    <img src={fiesta1} alt="holaa" />
-    <img src={fiesta2} alt="holaaa" />
-    <img src={fiesta3} alt="holaaa" />
-   </div>
   
    
-   
+   <div>
+    <VerNoti/>
+   </div>
    
   
 

@@ -3,7 +3,7 @@ import { pool } from "../db.js";
 // Obtener todos los turnos
 export const getTurno = async (req, res) => {
     try {
-        const [rows] = await pool.query("SELECT * FROM TurnoSociales");
+        const [rows] = await pool.query("SELECT * FROM TurnoObrasPublicas");
         res.json(rows);
     } catch (error) {
         console.error(error);
@@ -15,7 +15,7 @@ export const getTurno = async (req, res) => {
 export const getTurn = async (req, res) => {
     try {
         const { id } = req.params;
-        const [rows] = await pool.query("SELECT * FROM TurnoSociales WHERE id = ?", [id]);
+        const [rows] = await pool.query("SELECT * FROM TurnoObrasPublicas WHERE id = ?", [id]);
         if (rows.length === 0) {
             return res.status(404).json({ message: "Turno no encontrado" });
         }
@@ -31,7 +31,7 @@ export const postTurno = async (req, res) => {
     try {
         const { nombre, apellido, documento, fecha, horario, telefono, correo } = req.body;
         const [result] = await pool.query(
-            "INSERT INTO TurnoSociales (nombre, apellido, documento, fecha, horario, telefono, correo) VALUES (?, ?, ?, ?, ?, ?, ?)",
+            "INSERT INTO TurnoObrasPublicas (nombre, apellido, documento, fecha, horario, telefono, correo) VALUES (?, ?, ?, ?, ?, ?, ?)",
             [nombre, apellido, documento, fecha, horario, telefono, correo]
         );
         res.status(201).json({ id: result.insertId, nombre, apellido, documento, fecha, horario, telefono, correo });
@@ -51,7 +51,7 @@ export const putTurno = async (req, res) => {
         const { id } = req.params;
         const { nombre, apellido, documento, fecha, horario, telefono, correo } = req.body;
         const [result] = await pool.query(
-            "UPDATE TurnoSociales SET nombre = ?, apellido = ?, documento = ?, fecha = ?, horario = ?, telefono = ?, correo = ? WHERE id = ?",
+            "UPDATE TurnoObrasPublicas SET nombre = ?, apellido = ?, documento = ?, fecha = ?, horario = ?, telefono = ?, correo = ? WHERE id = ?",
             [nombre, apellido, documento, fecha, horario, telefono, correo, id]
         );
         if (result.affectedRows === 0) {
@@ -68,7 +68,7 @@ export const putTurno = async (req, res) => {
 export const deleteTurno = async (req, res) => {
     try {
         const { id } = req.params;
-        const [result] = await pool.query("DELETE FROM TurnoSociales WHERE id = ?", [id]);
+        const [result] = await pool.query("DELETE FROM TurnoObrasPublicas WHERE id = ?", [id]);
         if (result.affectedRows === 0) {
             return res.status(404).json({ message: "Turno no encontrado" });
         }

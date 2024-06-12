@@ -4,11 +4,11 @@ import {getTurno,getTurn,postTurno,putTurno,deleteTurno } from '../controllers/t
 
 const router = Router()
 
-router.get('/Turno',getTurno)
-router.get("/Turno/:id",getTurn);
-router.post('/Turno',postTurno)
-router.put('/Turno/:id', putTurno)
-router.delete('/Turno/:id',deleteTurno)
+router.get('/TurnoSociales',getTurno)
+router.get("/TurnoSociales/:id",getTurn);
+router.post('/TurnoSociales',postTurno)
+router.put('/TurnoSociales/:id', putTurno)
+router.delete('/TurnoSociales/:id',deleteTurno)
 
 
 export default router

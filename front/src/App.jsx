@@ -1,13 +1,14 @@
 import './App.css';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
-import Dep from './components/deporte';
-import Turnos from './components/turnoSociales';
+import Dep from './components/Deporte/deporte';
+import Atencion from './components/Atencion/atencion';
 import Inicio from './components/inicio'
-import ObrasPublicas from './components/obrasPublicas';
 import logo from './imagenes/comunalogo.webp'
 import logoFacebook from './imagenes/facebook.png'
 import logoTiktok from './imagenes/tiktok.png'
-
+import VerNotici from './components/Noticia/verNoticiaII';
+import Login from './components/Login/login'
+import logoUsuario from './imagenes/usuario.png';
 function App() {
   return (
     <div className="App">
@@ -23,15 +24,17 @@ function App() {
         {/* Aquí están los enlaces uno al lado del otro */}
         <Link to="/ini">Inicio</Link>
         <Link to="/dep">Deporte</Link>
-        <Link to="/Turno">Turno</Link>
-        <Link to="/obras Publicas">Obras Publicas</Link>
+        <Link to="/Atencion">Atencion al vecino</Link>
+        <Link to="/Noticia">Noticia</Link>
+        <Link to="/Login"><img src={logoUsuario} alt="Logo" className='logo-usuarioo' /></Link>
       </div>
       <div className="main-content">
         <Routes>
           <Route path="/ini" element={<Inicio />} />
           <Route path="/dep" element={<Dep />} />
-          <Route path="/Turno" element={<Turnos />} />
-          <Route path="/obras Publicas" element={<ObrasPublicas />} />
+          <Route path="/Atencion" element={<Atencion />} />
+          <Route path="/Noticia" element={<VerNotici />} />
+          <Route path="/Login" element={<Login />} />
           {/* Ruta predeterminada: */}
           <Route path="/" element={<Inicio />} />
         </Routes>

@@ -75,3 +75,12 @@ color: green;
   margin: 0 5px; /* Espacio entre las imágenes de las redes sociales */
 }
 
+.logo-usuarioo {
+  
+  
+  width: 20px; /* Adjust the width as needed */
+    
+    
+  height: 20px; /* Adjust the height as needed */
+    border-radius: 50%; /* Optional: make it circular */
+  }
